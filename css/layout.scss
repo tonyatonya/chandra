@@ -1,0 +1,119 @@
+$red:#892727;
+/**********************************
+**************************************/
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	background-image: url(../images/mainbg.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+body{
+	background:none;
+	line-height: normal;
+}
+.container{
+	max-width: 1170px;
+}
+.top-bar{
+	text-align: right;
+	min-height: 40px;
+	width: 100%;
+	display: table;
+	@-moz-document url-prefix() {
+		height: 40px;
+	}
+	>span{
+		display: table-cell;
+		vertical-align: middle;
+		text-align: right;
+	}
+	ul{
+		display: inline-block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			float: left;
+			padding-left: 5px;
+			padding-right: 5px;
+			&:last-child{
+				padding-right: 0;
+			}
+			a{
+				color: white;
+				.icon{
+					color: white;
+					font-size: 25px;
+				}
+			}
+		}
+	}
+}
+.mainnav{
+	width: 100%;
+	min-height: 116px;
+	background-color: white;
+	display: table;
+	position: relative;
+	>span{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.mainlogo{
+		width: 215px;
+		height: 81px;
+		display: inline;
+		float: left;
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			background-image: url(../images/mainlogo.jpg);
+			background-position: left top;
+			background-repeat: no-repeat;
+			h1{
+				display: none;
+			}
+		}
+	}
+	nav{
+		float: right;
+		position: relative;
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			float: right;
+			margin-top: 25px;
+			li{
+				float: left;
+				padding-left: 10px;
+				padding-right: 10px;
+				a{
+					color: #808184;
+					text-decoration: none;
+					&:hover{
+						color: $red;
+					}
+				}
+				&.active{
+					a{
+						color: $red;
+					}
+				}
+			}
+		}
+	}
+}
+section{
+	&#section-top{
+		margin-top: 37px;
+	}
+}
+.mainbanner{
+	padding-right: 0;
+}
